@@ -24,6 +24,7 @@ public class Tv {
 	public boolean getPower() {
 		return power;
 	}
+	
 	public void setchannel(int channel) {
 		if (this.power == true) {
 			if (channel > 255) {
@@ -100,7 +101,12 @@ public class Tv {
 	}
 
 	public void status() {
-		System.out.println("채널:" + channel + " 볼륨:" + volume + " 전원:" + power);
+		if (this.power==true) {
+			System.out.println("채널:" + channel + " 볼륨:" + volume + " 전원:" + power);
+		}
+		else {
+			System.out.println("off");
+		}
 
 	}
 }

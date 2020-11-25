@@ -17,7 +17,7 @@ public class TvApp {
 		
 		tv.setchannel(true);
 		tv.setchannel(true);
-		tv.setchannel(false);
+		tv.setchannel(true);
 		tv.status();
 		
 		tv.setpower(false);
