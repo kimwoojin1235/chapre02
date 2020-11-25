@@ -11,7 +11,7 @@ public class Tv {
 		this.volume=volume;
 		
 	}
-	//메소드
+	//메소드 get/set
 	public void setchannel(int channel) {
 		if (channel>255) {
 			this.channel=255;
@@ -22,6 +22,21 @@ public class Tv {
 			this.channel=channel;
 		}	
 	}
+	public void setchannel(boolean a) {
+		if (a==true) {
+				if (channel==255) {
+					this.channel=255;
+				}else {
+					this.channel+=1;
+				}
+			}else if (a==false) {
+				if (channel<=1) {
+					this.channel=1;
+				}else {
+					this.channel-=1;
+				}
+			}
+		}
 	public void setvolume(int volume) {
 		if (volume>100) {
 			this.volume=100;
@@ -29,9 +44,6 @@ public class Tv {
 			this.volume=volume;
 			}
 		}
-	public void setpower(boolean power) {
-		this.power=power;
-	}
 	public void setvolume(boolean b) {
 		if (b==true) {
 			if (volume==100) {
@@ -51,21 +63,9 @@ public class Tv {
 			}
 		}
 	}
-	public void setchannel(boolean a) {
-	if (a==true) {
-			if (channel==255) {
-				this.channel=255;
-			}else {
-				this.channel+=1;
-			}
-		}else if (a==false) {
-			if (channel<=1) {
-				this.channel=1;
-			}else {
-				this.channel-=1;
-			}
-		}
-	}
+	public void setpower(boolean power) {
+		this.power=power;
+	}	
 	public void status() {
 		System.out.println("채널:"+channel+" 볼륨:"+volume+" 전원:"+power);
 
