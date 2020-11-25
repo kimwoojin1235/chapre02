@@ -2,9 +2,9 @@ package com.javaex.ex01;
 
 public class GoodsApp {
 	public static void main( String[] args) {
-		Goods camera =new Goods();//틀을 불러와 camera에 저장을 함
-		Goods computer =new Goods();
-		Goods cup =new Goods();
+		Goods camera =new Goods("니콘",400000);//틀을 불러와 camera에 저장을 함
+		Goods computer =new Goods("LG그램",1000000);
+		Goods cup =new Goods("머그컵",2000);
 		//캡슣화 때문에 사용 못함
 		/*
 		camera.name ="니콘";
@@ -30,29 +30,42 @@ public class GoodsApp {
 		System.out.println(camera.name);
 		System.out.println(camera.price);
 		*/
+		/*
 		camera.setname("니콘");//입력값이 스트링n의 저장이됨
 		String name = camera.getname();//입력이된n이 name의 입력
-		System.out.println(name);//출력
+		//System.out.println(name);//출력
+		
 		
 		camera.setprice(400000);//입력값이 int의 p의 입력이됨
 		int price=camera.getprice();//입력이된 p의 값을  peice의 넣음
-		System.out.println(price);//출력
+		//System.out.println(price);//출력 일반적인방법
+		//System.out.println("상품이름:"+name+", 가격:"+price);
+		camera.showinfo();//필드에서 출력을 하는 틀을 짜고 메소드에서 
 		
 		computer.setname("LG그램");
 		String name1 = computer.getname();
-		System.out.println(name1);
+		//System.out.println(name1);
 		
 		computer.setprice(1000000);
 		int price1 = computer.getprice();
-		System.out.println(price1);
+		//System.out.println(price1);
+		//System.out.println("상품이름:"+name1+", 가격:"+price1);
+		computer.showinfo();
 		
 		cup.setname("머그컵");
 		String name2 = cup.getname();
-		System.out.println(name2);
+		//System.out.println(name2);
 		
 		cup.setprice(2000);
 		int price2=cup.getprice();
-		System.out.println(price2);
+		//System.out.println(price2);
+		//System.out.println("상품이름:"+name2+", 가격:"+price2);
+		cup.showinfo();
+		*/
+		camera.showinfo();
+		computer.showinfo();
+		cup.showinfo();
+		
 	}
 
 }
