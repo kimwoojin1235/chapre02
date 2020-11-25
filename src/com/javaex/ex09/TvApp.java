@@ -4,6 +4,7 @@ public class TvApp {
 
 	public static void main(String[] args) {
 		Tv tv=new Tv(7,20,false);
+		System.out.println(tv.toString());
 		tv.status();
 		tv.setpower(true);
 		tv.setvolume(120);

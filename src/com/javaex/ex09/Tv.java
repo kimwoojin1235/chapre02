@@ -7,6 +7,8 @@ public class Tv {
 	private boolean power;
 
 	// 생성자
+	public Tv() {}
+	
 	public Tv(int channel, int volume, boolean power) {
 		this.channel = channel;
 		this.volume = volume;
@@ -108,6 +110,11 @@ public class Tv {
 		} else {
 			System.out.println("채널:" + channel + " 볼륨:" + volume + " 전원:" + power);
 		}
+		
 
+	}
+	@Override
+	public String toString() {
+		return "Tv [channel=" + channel + ", volume=" + volume + ", power=" + power + "]";
 	}
 }
