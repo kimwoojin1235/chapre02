@@ -10,7 +10,7 @@ public class Tv {
 	public Tv(int channel, int volume, boolean power) {
 		this.channel = channel;
 		this.volume = volume;
-		this.power=power;
+		this.power = power;
 
 	}
 
@@ -18,13 +18,15 @@ public class Tv {
 	public int getChannel() {
 		return channel;
 	}
+
 	public int getVolume() {
 		return volume;
 	}
+
 	public boolean getPower() {
 		return power;
 	}
-	
+
 	public void setchannel(int channel) {
 		if (this.power == true) {
 			if (channel > 255) {
@@ -101,11 +103,10 @@ public class Tv {
 	}
 
 	public void status() {
-		if (this.power==true) {
+		if (this.power == true) {
 			System.out.println("채널:" + channel + " 볼륨:" + volume + " 전원:" + power);
-		}
-		else {
-			System.out.println("off");
+		} else {
+			System.out.println("채널:" + channel + " 볼륨:" + volume + " 전원:" + power);
 		}
 
 	}
