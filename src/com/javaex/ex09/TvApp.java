@@ -3,10 +3,10 @@ package com.javaex.ex09;
 public class TvApp {
 
 	public static void main(String[] args) {
-		Tv tv=new Tv(7,20,true);
+		Tv tv=new Tv(7,20,false);
 		tv.status();
 		tv.setpower(true);
-		tv.setvolume(90);
+		tv.setvolume(120);
 		tv.status();
 		
 		tv.setvolume(false);
