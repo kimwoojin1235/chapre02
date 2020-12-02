@@ -41,7 +41,7 @@ public class Student extends Person {
 	
 	public void showinfo() {
 		/*
-		System.out.println(getNameString());//부모쪽의 name을 가지고 온것
+		System.out.println(getName());//부모쪽의 name을 가지고 온것
 		//만일 자식과 부모의 함수이름이 같다면 부모super자식은this를 적어 넣는다.
 		System.out.println(getAge());
 		System.out.println(schoolname);

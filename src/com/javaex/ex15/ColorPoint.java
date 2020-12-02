@@ -5,9 +5,12 @@ public class ColorPoint extends Point{
 	private String color;
 	//생성자
 	public ColorPoint() {
-		System.out.println("color()");
+		
 	}
-	
+	public ColorPoint(String color) {
+	this.color=color;	
+	System.out.println("color(1)");
+	}
 	public ColorPoint(int x,int y,String color) {
 		super(x,y);
 		this.color = color;
