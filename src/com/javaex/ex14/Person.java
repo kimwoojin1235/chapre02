@@ -15,7 +15,7 @@ public class Person {
 		System.out.println("person(2)");
 	}
 	
-	//메소드 get/setㅁㄹ
+	//메소드 get/setㅁㄹdd
 	public String getName() {
 		return name;
 	}
